@@ -1,1 +1,13 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+@import './utils/variables';
+@import './components/reset-styles';
+@import './components/common-styles';
+@import './components/header';
+@import './components/hero';
+@import './components/finance';
+@import './components/provide';
+@import './components/business-cases';
+@import './components/blog-section';
+@import './components/persons';
+@import './components/call-request';
+@import './components/footer';

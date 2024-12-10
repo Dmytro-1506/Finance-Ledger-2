@@ -1,0 +1,72 @@
+.callrequest-section {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    .callrequest-picture {
+        @media screen and (min-width: 768px) {
+            width: 50vw;
+        }
+        .callrequest-image {
+            width: 100%;
+            @media screen and (min-width: 768px) {
+                height: 100%;
+            }
+        }
+    }
+    .callrequest-form {
+        padding-top: 26px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        background-color: $background-color-two;
+        @media screen and (min-width: 768px) {
+            width: calc(50vw - 60px);
+        }
+        @media screen and (min-width: 1360px) {
+            padding-top: 78px;
+        }
+        .callrequest-title {
+            margin-bottom: 34px;
+            font-weight: 300;
+            font-size: 38px;
+            line-height: 1.26;
+        }
+        .request-input-box{
+            margin-bottom: 53px;
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+            @media screen and (min-width: 1360px) {
+                margin-bottom: 60px;
+            }
+            .callrequest-input {
+                border: none;
+                background-color: #fff;
+                width: calc(100% - 6px);
+                padding-left: 5px;
+                height: 40px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.6;
+                color: #808080;
+                @media screen and (min-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+        }
+        .callrequest-button {
+            width: 100%;
+            height: 42px;
+            border-radius: 5px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.6;
+            background-color: $accent-color-green;
+            color: $bright-text;
+            text-align: center;
+            @media screen and (min-width: 768px) {
+                font-size: 18px;
+            }
+        }
+    }
+}

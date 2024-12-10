@@ -1,0 +1,153 @@
+.persons-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media screen and (min-width: 768px) {
+        padding-top: 48px;
+        padding-bottom: 59px;
+    }
+    @media screen and (min-width: 1360px) {
+        padding-top: 49px;
+        padding-bottom: 42px;
+    }
+    .persons-section-description {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 37px;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 49px;
+        }
+        @media screen and (min-width: 1360px) {
+            margin-bottom: 45px;
+        }
+        .persons-subtitle {
+            margin-bottom: 15px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.66;
+            @media screen and (min-width: 768px) {
+                margin-bottom: 16px;
+                font-size: 20px;
+            }
+        }
+        .persons-title {
+            margin-bottom: 35px;
+            font-weight: 300;
+            font-size: 38px;
+            line-height: 1.26;
+            @media screen and (min-width: 768px) {
+                margin-bottom: 34px;
+            }
+        }
+        .persons-description-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.6;
+            @media screen and (min-width: 768px) {
+                font-size: 17px;
+            }
+            @media screen and (min-width: 1360px) {
+                font-size: 18px;
+            }
+        }
+    }
+    
+    .persons-list {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            padding-left: 30px;
+            padding-right: 30px;
+            flex-direction: row;
+            gap: 20px;
+        }
+        @media screen and (min-width: 1360px) {
+            gap: 12px;
+        }
+        .person-item {
+            width: 100%;
+            @media screen and (min-width: 768px) {
+                width: calc((100% - 20px * 2) / 3);
+            }
+            .person-image {
+                width: 100%;
+            }
+            .person-name {
+                margin-top: 15px;
+                margin-bottom: 11px;
+                font-weight: 400;
+                font-size: 23px;
+                line-height: 1.26;
+                @media screen and (min-width: 768px) {
+                    margin-top: 14px;
+                    margin-bottom: 12px;
+                    font-size: 25px;
+                }
+                @media screen and (min-width: 1360px) {
+                    margin-top: 13px;
+                }
+            }
+            .person-position {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.6;
+                @media screen and (min-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .person-item {
+        display: inline-block;
+        box-shadow: none;
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+        
+        &:hover .person-icons-box,
+        &:focus .person-icons-box {
+            transform: translateY(-100%);
+        }
+        
+        .person-content-thumb {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .person-icons-box {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            transform: translateY(0%);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .person-icon-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            margin: 0 auto;
+            width: 216px;
+            height: 35px;
+            .person-icon-item {
+                display: flex;
+            }
+        }
+        .person-details {
+            padding-bottom: 8px;
+        }
+    }
+}

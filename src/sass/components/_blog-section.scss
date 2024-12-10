@@ -1,0 +1,83 @@
+.blog-section{
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .blog-picture {
+        width: 100%;
+        @media screen and (min-width: 768px) {
+            width: 50vw;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .blog-description-box {
+        padding: 30px;
+        color: $bright-text;
+        background-color: $accent-color-blue;
+        @media screen and (min-width: 768px) {
+            width: calc(50vw - 70px);
+            padding: 30px 40px 30px 30px;
+        }
+        @media screen and (min-width: 1360px) {
+            padding-top: 112px;
+            padding-right: 44px;
+        }
+        .blog-date {
+            margin-bottom: 5px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.66;
+            @media screen and (min-width: 768px) {
+                margin-bottom: 6px;
+                font-size: 20px;
+            }
+            @media screen and (min-width: 1360px) {
+                margin-bottom: 5px;
+            }
+        }
+        .blog-title {
+        margin-bottom: 25px;
+        font-weight: 300;
+        font-size: 38px;
+        line-height: 1.26;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 26px;
+        }
+    }
+    .blog-description-text {
+        margin-bottom: 14px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        @media screen and (min-width: 1360px) {
+            margin-bottom: 17px;
+        }
+    }
+    .blog-button {
+        width: 184px;
+        height: 47px;
+        margin-left: 0;
+        background-color: $accent-color-blue;
+        border-radius: 5px;
+        border: 1px solid;
+        color: $bright-text;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        @media screen and (min-width: 768px) {
+            width: 196px;
+            height: 50px;
+            font-size: 18px;
+        }
+    }
+}
+}
