@@ -1,0 +1,68 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-modal-close>x</button>
+    <p class="modal__title">Leave your details, we will call you back</p>
+    <form class="modal__form">
+      <div class="modal__item">
+        <label for="name-modal" class="modal__lable">Name</label>
+        <div class="modal__input">
+          <input
+            type="text"
+            placeholder=""
+            name="name"
+            id="name-modal"
+            required
+            class="modal__name modal-style"
+          />
+        </div>
+      </div>
+      <div class="modal__item">
+        <label for="tel-modal" class="modal__lable">Phone number</label>
+        <div class="modal__input">
+          <input
+            type="tel"
+            placeholder=" "
+            name="telefon"
+            id="tel-modal"
+            required
+            class="modal__tel modal-style"
+          />
+        </div>
+      </div>
+      <div class="modal__item">
+        <label for="e-mail-modal" class="modal__lable">Mail</label>
+        <div class="modal__input">
+          <input
+            type="email"
+            placeholder=" "
+            name="e-mail"
+            id="e-mail-modal"
+            required
+            class="modal__e-mail modal-style"
+          />
+        </div>
+      </div>
+      <label for="comment-modal" class="modal__lable">Comment</label>
+      <textarea
+        name="comment"
+        id="comment-modal"
+        placeholder="Введіть текст"
+        class="modal__textarea modal-style"
+      ></textarea>
+      <div class="modal__checkbox">
+        <input
+          type="checkbox"
+          id="checkbox"
+          required
+          class="modal__check visually-hidden"
+        />
+        <!-- class="visually-hidden" -->
+        <label for="checkbox" class="modal__check-lable"
+          >I agree with the mailing and accept it</label
+        >
+        <a href="#" class="modal__link">Terms of the contract</a>
+      </div>
+      <button type="submit" class="modal__submit-btn">Send</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,205 @@
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    overflow-y: scroll;
+    transition-property: opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.modal {
+    width: 100%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $background-color-one;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 528px;
+    }
+
+    .modal__close-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        border-radius: 50%;
+        background-color: $background-color-one;
+        padding: 0;
+        height: 30px;
+        fill: $dark-text;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
+    }
+
+    .modal__title {
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: $primary-text-color;
+
+        @media screen and (min-width: 1200px) {
+            line-height: 1.15;
+        }
+    }
+
+    .modal__item {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .modal__lable {
+        font-size: 12px;
+        line-height: 1.17;
+        color: $secondary-text-color;
+    }
+
+    .modal__input {
+        position: relative;
+        margin-top: 4px;
+
+        .modal__svg {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            fill: $primary-text-color;
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    .modal__name {
+        @extend .modal-style;
+    }
+
+    .modal__tel {
+        @extend .modal-style;
+    }
+
+    .modal__e-mail {
+        @extend .modal-style;
+    }
+
+    .modal__textarea {
+        @extend .modal-style;
+        margin-bottom: 20px;
+        margin-top: 4px;
+        padding: 12px 16px;
+        height: 120px;
+        resize: none;
+
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.17;
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
+
+    .modal__checkbox {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        @media screen and (min-width: 1200px) {
+            text-align: center;
+            justify-content: center;
+        }
+
+        .modal__svg {
+            position: absolute;
+            pointer-events: none;
+            left: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+            fill: transparent;
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            @media screen and (min-width: 1200px) {
+                left: 27px;
+            }
+        }
+    }
+
+    .modal__check-lable {
+        position: relative;
+        display: flex;
+        align-items: center;
+        line-height: 1.17;
+        color: $secondary-text-color;
+        margin-right: 7px;
+        padding-left: 25px;
+        letter-spacing: 0.01em;
+
+        &::before {
+            position: absolute;
+            left: 0px;
+            content: '';
+            display: block;
+            width: 16px;
+            height: 15px;
+            border: 2px solid $primary-text-color;
+            border-radius: 2px;
+            transition-property: border-color, background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    .modal__check:checked~.modal__svg {
+        fill: $background-color-one;
+    }
+
+    .modal__check:checked+.modal__check-lable::before {
+        border-color: $accent-color;
+        background-color: $accent-color;
+    }
+
+    .modal__link {
+        line-height: 1.17;
+        text-decoration-line: underline;
+        color: $accent-color;
+    }
+
+    .modal__submit-btn {
+        width: 200px;
+        height: 50px;
+        margin-top: 30px;
+        background-color: $accent-color;
+        color: $bright-text;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}

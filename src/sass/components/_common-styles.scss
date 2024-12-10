@@ -1,3 +1,28 @@
 section {
     width: 100%;
 }
+
+.modal-style {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus+.modal__svg {
+        fill: $accent-color;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $accent-color;
+        cursor: pointer;
+    }
+}
