@@ -137,7 +137,7 @@
         display: flex;
         align-items: center;
         line-height: 1.17;
-        color: $secondary-text-color;
+        color: $dark-text;
         margin-right: 7px;
         padding-left: 25px;
         letter-spacing: 0.01em;
@@ -149,7 +149,6 @@
             display: block;
             width: 16px;
             height: 15px;
-            border: 2px solid $primary-text-color;
             border-radius: 2px;
             transition-property: border-color, background-color;
             transition-duration: 250ms;
