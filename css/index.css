@@ -924,7 +924,7 @@ section {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
   overflow-y: scroll;
   transition-property: opacity, visibility;
@@ -944,7 +944,7 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
+  background-color: #f5f4fa;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
@@ -995,16 +995,6 @@ section {
 .modal .modal__input {
   position: relative;
   margin-top: 4px;
-}
-.modal .modal__input .modal__svg {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: #212121;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal .modal__textarea {
   margin-bottom: 20px;
@@ -1068,9 +1058,6 @@ section {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal .modal__check:checked ~ .modal__svg {
-  fill: #ffffff;
-}
 .modal .modal__check:checked + .modal__check-lable::before {
   border-color: #2196f3;
   background-color: #2196f3;
@@ -1084,7 +1071,7 @@ section {
   width: 200px;
   height: 50px;
   margin-top: 30px;
-  background-color: #2196f3;
+  background-color: #28A745;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;

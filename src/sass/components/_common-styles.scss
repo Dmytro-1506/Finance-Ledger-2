@@ -16,13 +16,9 @@ section {
         cursor: pointer;
     }
 
-    &:focus+.modal__svg {
-        fill: $accent-color;
-    }
-
     &:focus {
         outline: none;
-        border-color: $accent-color;
+        border-color: $accent-color-green;
         cursor: pointer;
     }
 }

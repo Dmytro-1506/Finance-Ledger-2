@@ -4,7 +4,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     overflow-y: scroll;
     transition-property: opacity, visibility;
@@ -25,7 +25,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: $background-color-one;
+    background-color: $background-color-two;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -47,11 +47,6 @@
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-            fill: $accent-color;
-        }
     }
 
     .modal__title {
@@ -60,7 +55,7 @@
         font-size: 20px;
         line-height: 1.5;
         text-align: center;
-        color: $primary-text-color;
+        color: $dark-text;
 
         @media screen and (min-width: 1200px) {
             line-height: 1.15;
@@ -75,23 +70,12 @@
     .modal__lable {
         font-size: 12px;
         line-height: 1.17;
-        color: $secondary-text-color;
+        color: $dark-text;
     }
 
     .modal__input {
         position: relative;
         margin-top: 4px;
-
-        .modal__svg {
-            position: absolute;
-            left: 12px;
-            top: 50%;
-            transform: translateY(-50%);
-            fill: $primary-text-color;
-            transition-property: fill;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
     }
 
     .modal__name {
@@ -173,26 +157,17 @@
         }
     }
 
-    .modal__check:checked~.modal__svg {
-        fill: $background-color-one;
-    }
-
-    .modal__check:checked+.modal__check-lable::before {
-        border-color: $accent-color;
-        background-color: $accent-color;
-    }
-
     .modal__link {
         line-height: 1.17;
         text-decoration-line: underline;
-        color: $accent-color;
+        color: $accent-color-blue;
     }
 
     .modal__submit-btn {
         width: 200px;
         height: 50px;
         margin-top: 30px;
-        background-color: $accent-color;
+        background-color: $accent-color-green;
         color: $bright-text;
         font-weight: 700;
         font-size: 16px;
