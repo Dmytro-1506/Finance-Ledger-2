@@ -1,0 +1,49 @@
+<section class="callrequest-section">
+  <picture class="callrequest-picture">
+    <source
+      srcset="
+        images/RequestCallback-mobile-x1.jpg 1x,
+        images/RequestCallback-mobile-x2.jpg 2x
+      "
+      media="(max-width: 768px)"
+    />
+    <source
+      srcset="
+        images/RequestCallback-tablet-x1.jpg 1x,
+        images/RequestCallback-tablet-x2.jpg 2x
+      "
+      media="(max-width: 1199px)"
+    />
+    <source
+      srcset="
+        images/RequestCallback-desktop-x1.jpg 1x,
+        images/RequestCallback-desktop-x2.jpg 2x
+      "
+      media="(min-width: 1200px)"
+    />
+    <img
+      class="callrequest-image"
+      src="./images/RequestCallback-desktop-x1.jpg"
+      alt=""
+    />
+  </picture>
+  <div class="callrequest-form">
+    <h2 class="callrequest-title">Request Callback</h2>
+    <div class="request-input-box">
+      <input
+        class="callrequest-input"
+        type="text"
+        placeholder="Enter your name"
+        name="User name"
+      />
+      <input
+        class="callrequest-input"
+        type="email"
+        placeholder="Enter email*"
+        name="E-mail"
+        required
+      />
+    </div>
+    <button class="callrequest-button" type="submit">Send</button>
+  </div>
+</section>
