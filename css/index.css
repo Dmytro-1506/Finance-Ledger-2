@@ -341,7 +341,7 @@ section {
 }
 @media screen and (min-width: 768px) {
   .provide-section .provide-description-box {
-    width: calc(50vw - 70px);
+    width: 50vw;
     height: auto;
     padding-right: 40px;
   }
@@ -485,7 +485,7 @@ section {
 }
 @media screen and (min-width: 768px) {
   .cases-section .cases-gallery-box {
-    width: calc(100vw - 56px);
+    width: 100vw;
     height: calc((100vw - 50px) / 3);
     flex-wrap: wrap;
     row-gap: 7px;
@@ -528,7 +528,7 @@ section {
 }
 @media screen and (min-width: 768px) {
   .blog-section .blog-description-box {
-    width: calc(50vw - 70px);
+    width: 50vw;
     padding: 30px 40px 30px 30px;
   }
 }

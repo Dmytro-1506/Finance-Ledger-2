@@ -54,7 +54,7 @@
         flex-direction: column;
         gap: 7px;
         @media screen and (min-width: 768px) {
-            width: calc(100vw - 28px * 2);
+            width: 100vw;
             height: calc((100vw - 50px) / 3);
             flex-wrap: wrap;
             row-gap: 7px;
