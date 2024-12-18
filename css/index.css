@@ -61,7 +61,7 @@ section {
 .modal-style:hover, .modal .modal__textarea:hover, .modal .modal__e-mail:hover, .modal .modal__tel:hover, .modal .modal__name:hover {
   cursor: pointer;
 }
-.modal-style:focus, .modal .modal__textarea:focus, .modal .modal__e-mail:focus, .modal .modal__tel:focus, .modal .modal__name:focus, .modal-style:focus-visible, .modal .modal__textarea:focus-visible, .modal .modal__e-mail:focus-visible, .modal .modal__tel:focus-visible, .modal .modal__name:focus-visible {
+.modal-style:focus, .modal .modal__textarea:focus, .modal .modal__e-mail:focus, .modal .modal__tel:focus, .modal .modal__name:focus {
   outline: none;
   border-color: #28A745;
   cursor: pointer;
@@ -260,9 +260,6 @@ section {
 .hero .hero-content-box .hero-button-svg {
   margin-right: 5px;
   vertical-align: sub;
-}
-.hero .hero-content-box:focus-visible {
-  border-color: #28A745;
 }
 
 .finance-section {
