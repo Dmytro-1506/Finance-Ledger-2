@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://dmytro-1506.github.io/finance-ledger-2",
+  "homepage": "https://dmytro-1506.github.io/Finance-Ledger-2",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /finance-ledger-2/"
+    "build": "parcel build src/*.html --public-url /Finance-Ledger-2/"
   },
   "repository": {
     "type": "git",

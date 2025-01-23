@@ -952,10 +952,14 @@ section {
   }
 }
 .modal .modal__close-btn {
+  font-weight: bold;
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  border: 1px solid #28A745;
   background-color: #ffffff;
   padding: 0;
   height: 30px;
@@ -963,6 +967,10 @@ section {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal .modal__close-btn:hover, .modal .modal__close-btn:focus {
+  color: #fff;
+  background-color: #28A745;
 }
 .modal .modal__title {
   margin-bottom: 12px;

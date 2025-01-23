@@ -36,10 +36,14 @@
     }
 
     .modal__close-btn {
+        font-weight: bold;
         position: absolute;
-        top: 8px;
-        right: 8px;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
+        border: 1px solid $accent-color-green;
         background-color: $background-color-one;
         padding: 0;
         height: 30px;
@@ -47,6 +51,11 @@
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: #fff;
+            background-color: $accent-color-green;
+        }
     }
 
     .modal__title {
